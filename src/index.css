@@ -1,14 +1,14 @@
-/* estilos para el index.html*/
+/* ==========================================
+   MÉTODO 1: ESTILOS GLOBALES EN INDEX.CSS
+   ================================---------- */
 
-/* reseteo de estilos */
-/* selector universal */
-*{
+/* Configuramos el cuerpo de la página con un fondo pastel suave y tipo de letra limpio */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f5fb; /* Un fondo pastel lila/gris muy clarito y elegante */
+  color: #4a4556;             /* Color de texto oscuro pero suave */
+  display: flex;
+  justify-content: center;    /* Centra toda la aplicación en el medio de la pantalla */
 }

@@ -1,0 +1,25 @@
+/* ==========================================
+   MÉTODO 1: ESTILOS GLOBALES EN APP.CSS
+   ================================---------- */
+
+/* Estilos para el cuerpo general de toda la página web */
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  /* Tipo de letra limpio y moderno para toda la aplicación */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  /* Color de fondo general en tono pastel suave (lavanda/celeste muy claro) */
+  background-color: #f3f4f6; 
+  color: #4a4a4a; /* Color de texto principal suave */
+  display: flex;
+  justify-content: center; /* Centra todo horizontalmente en la pantalla */
+}
+
+/* Caja contenedora principal que organiza el orden de las tarjetas */
+.main-app-container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos uno debajo del otro */
+  gap: 2rem;              /* Espacio de separación limpio entre cada sección */
+  width: 100%;
+  max-width: 800px;       /* Ancho máximo para que no se estire de más */
+}

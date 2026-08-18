@@ -7,14 +7,15 @@ export type Priority = 'Alta' | 'Media' | 'Baja'
 // del formulario
 
 export interface TodoForm {
-    Titulo: string
-    Prioridad: Priority
+    titulo: string
+    prioridad: Priority
 }
 
 //3. Definir la estructura
 // de cada todo
 export interface Todo{
-    Titulo: string
-    Prioridad: Priority
+    id: string
+    titulo: string
+    prioridad: Priority
     completada: boolean
 }
