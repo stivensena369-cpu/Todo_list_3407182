@@ -1,17 +1,12 @@
-import { useState } from 'react'
-
+import { useState, useEffect } from 'react'
 //subcomponentes
 import ListTodo from '../../components/todos/ListTodo'
-
 import FormTodo 
     from '../../components/todos/FormTodo'
-
 import type { Priority, Todo } 
     from '../../interfaces/todos/form'
-
 import { consultarTodosAxios } 
     from '../../services/TodoService'
-
 import { crearTodoAxios } from '../../services/TodoService';
 
 const TodoPage = () => {
@@ -22,7 +17,7 @@ const TodoPage = () => {
     useEffect(()=>{
         const consultar = async() => {
         //llame al servicio para traer datos
-        const datos = await consultarTodosAxios
+        const datos = await consultarTodosAxios()
         // ocargar el estado con los datos traidos
         setListaTodo(datos)
     }
