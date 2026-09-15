@@ -44,7 +44,7 @@ const TodoPage = () => {
       //poner la nueva tarea
       //en la lista
       const nuevaData = await crearTodoAxios(Tarea) 
-      setListaTodo((prev)=>[...prev , nuevaData])
+      setListaTodo((prev)=>[nuevaData, ...prev])
       
   }
 

@@ -1,110 +1,269 @@
+/* ==========================================
+   1. CONFIGURACIÓN Y REGLAS BÁSICAS
+   ========================================== */
+
+/* Limpia los márgenes y rellenos por defecto de todos los elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Sin espacio externo por defecto */
+  padding: 0; /* Sin espacio interno por defecto */
+  box-sizing: border-box; /* Incluye bordes y rellenos en el tamaño total */
 }
 
+/* ==========================================
+   2. FONDO GENERAL Y TIPOGRAFÍA
+   ========================================== */
+
+/* Fondo verde manzana pastel para toda la página */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #F9FAFB;
-  color: #111827;
-  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Fuente moderna */
+  background-color: #DCEDC8; /* Verde manzana pastel suave */
+  color: #1E293B; /* Texto oscuro para lectura clara */
+  padding: 24px; /* Espacio alrededor de la página */
 }
 
+/* ==========================================
+   3. TÍTULOS Y ENCABEZADOS PRINCIPALES
+   ========================================== */
+
+/* Estilos para los títulos principales de cada sección */
 h1,
 h2 {
-  text-align: center;
-  color: #4F46E5;
-  margin-bottom: 20px;
+  text-align: center; /* Centra el texto del título */
+  color: #2D3748; /* Color oscuro profesional */
+  font-size: 24px; /* Tamaño visible */
+  font-weight: 700; /* Texto en negrita */
+  margin-bottom: 24px; /* Espacio debajo del título */
+  letter-spacing: -0.5px; /* Junta ligeramente las letras */
 }
 
+/* ==========================================
+   4. BARRA DE NAVEGACIÓN Y MENÚ SUPERIOR
+   ========================================== */
+
+/* Contenedor del menú principal */
+header, nav {
+  display: flex; /* Alinea los botones lado a lado */
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 15px; /* Espacio entre los botones */
+  padding: 12px; /* Relleno interno */
+  margin-bottom: 30px; /* Separa el menú del contenido */
+  background-color: transparent !important; /* Quita el color aqua por defecto */
+}
+
+/* Botones de enlace en el menú (Tareas y Users) */
+header a, nav a {
+  display: inline-block; /* Permite dar forma de botón */
+  background-color: #818CF8; /* Azul violeta pastel */
+  color: #FFFFFF; /* Texto blanco */
+  padding: 10px 24px; /* Relleno interno */
+  border-radius: 8px; /* Esquinas redondeadas estilo píldora */
+  text-decoration: none; /* Quita la raya de enlace */
+  font-weight: 600; /* Texto semi-negrita */
+  font-size: 14px; /* Tamaño mediano */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  transition: all 0.2s ease; /* Animación al pasar el ratón */
+}
+
+/* Efecto al pasar el ratón sobre los botones del menú */
+header a:hover, nav a:hover {
+  background-color: #6366F1; /* Azul más intenso */
+  transform: translateY(-2px); /* Eleva ligeramente el botón */
+}
+
+/* ==========================================
+   5. FORMULARIOS DE REGISTRO
+   ========================================== */
+
+/* Tarjeta principal del formulario */
 form {
-  max-width: 450px;
-  margin: 30px auto;
-  padding: 30px;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E7EB;
-  border-radius: 4px;
+  max-width: 480px; /* Ancho máximo */
+  margin: 20px auto; /* Centra el formulario */
+  padding: 28px; /* Relleno interno */
+  background-color: #FFFFFF; /* Tarjeta blanca para resaltar */
+  border: 1px solid #E2E8F0; /* Borde gris suave */
+  border-radius: 12px; /* Esquinas muy suaves */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra de elevación */
 }
 
+/* Textos sobre los campos de entrada */
 label {
-  display: block;
-  margin-bottom: 8px;
-  color: #374151;
-  font-weight: bold;
+  display: block; /* Ocupa su propia línea */
+  margin-bottom: 6px; /* Espacio antes de la caja */
+  color: #475569; /* Gris oscuro elegante */
+  font-size: 14px; /* Tamaño mediano */
+  font-weight: 600; /* Texto semi-negrita */
 }
 
+/* ==========================================
+   6. CAMPOS DE TEXTO E INPUTS
+   ========================================== */
+
+/* Cajas de texto y menús desplegables */
 input,
 select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #D1D5DB;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  font-size: 15px;
+  width: 100%; /* Ocupa todo el ancho */
+  padding: 10px 14px; /* Relleno interno */
+  margin-bottom: 18px; /* Espacio de separación hacia abajo */
+  border: 1px solid #CBD5E1; /* Borde gris claro */
+  border-radius: 8px; /* Esquinas suavizadas */
+  background-color: #F8FAFC; /* Fondo gris pastel tenue */
+  color: #0F172A; /* Texto oscuro */
+  font-size: 14px; /* Tamaño de letra */
+  transition: all 0.2s; /* Animación de enfoque */
 }
 
+/* Efecto al hacer clic para escribir en el campo */
 input:focus,
 select:focus {
-  outline: none;
-  border-color: #4F46E5;
+  outline: none; /* Quita el borde por defecto */
+  border-color: #818CF8; /* Borde azul pastel para resaltar */
+  background-color: #FFFFFF; /* Cambia a blanco puro al escribir */
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2); /* Resplandor pastel suave */
 }
 
+/* ==========================================
+   7. BOTONES DE ACCIÓN (FORMULARIO)
+   ========================================== */
+
+/* Botón principal para guardar/crear */
 button {
-  width: 100%;
-  padding: 12px;
-  background-color: #4F46E5;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+  width: 100%; /* Ocupa todo el ancho */
+  padding: 12px; /* Relleno interno */
+  background-color: #818CF8; /* Azul violeta pastel */
+  color: #FFFFFF; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de texto */
+  font-weight: 600; /* Texto en negrita */
+  cursor: pointer; /* Cambia el ratón a la manito */
+  transition: background-color 0.2s; /* Animación al presionar */
 }
 
+/* Efecto al pasar el ratón sobre el botón */
 button:hover {
-  background-color: #4338CA;
+  background-color: #6366F1; /* Azul más vivo */
 }
 
+/* ==========================================
+   8. ESTILOS BASE DE LAS TABLAS
+   ========================================== */
+
+/* Tarjeta contenedora de la tabla */
 table {
-  width: 90%;
-  margin: 30px auto;
-  border-collapse: collapse;
+  width: 90%; /* Ancho de la tabla */
+  max-width: 900px; /* Ancho máximo en pantallas grandes */
+  margin: 20px auto; /* Centra la tabla */
+  border-collapse: separate; /* Permite bordes limpios */
+  border-spacing: 0; /* Elimina separación entre celdas */
+  background-color: #FFFFFF; /* Fondo base blanco */
+  border: 1px solid #CBD5E1; /* Borde gris definido */
+  border-radius: 12px; /* Redondea los bordes de la tabla */
+  overflow: hidden; /* Mantiene el contenido dentro de las esquinas */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* Encabezados superiores de las columnas */
+th {
+  padding: 12px 16px; /* Relleno dentro del encabezado */
+  background-color: #E2E8F0; /* Gris pastel bien definido */
+  color: #334155; /* Texto gris oscuro */
+  font-size: 13px; /* Tamaño de letra */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 0.05em; /* Espaciado entre letras */
+  font-weight: 700; /* Negrita */
+  border-bottom: 2px solid #CBD5E1; /* Línea separadora inferior */
+}
+
+/* Celdas individuales de datos */
+td {
+  padding: 12px 16px; /* Relleno interno */
+  font-size: 14px; /* Tamaño del texto */
+  color: #1E293B; /* Texto oscuro visible */
+  border-bottom: 1px solid #E2E8F0; /* Línea gris suave entre filas */
+  text-align: center; /* Centra el contenido */
+}
+
+/* Filas impares: Blanco */
+tr:nth-child(odd) td {
   background-color: #FFFFFF;
 }
 
-th {
-  padding: 12px;
-  background-color: #F3F4F6;
-  color: #374151;
-  border: 1px solid #E5E7EB;
+/* Filas pares: Gris notorio pero suave para la lectura alternada */
+tr:nth-child(even) td {
+  background-color: #E2E8F0;
 }
 
-td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #E5E7EB;
-}
+/* ==========================================
+   9. ETIQUETAS DE PRIORIDAD Y ESTADOS (PASTEL)
+   ========================================== */
 
-tr:nth-child(even) {
-  background-color: #F9FAFB;
-}
-
+/* Estado de prioridad alta */
 .alta {
-  background-color: #FEE2E2;
-  color: #991B1B;
-  font-weight: bold;
+  background-color: #FEE2E2; /* Rojo pastel claro */
+  color: #991B1B; /* Texto rojo oscuro */
+  font-weight: 600; /* Negrita */
 }
 
+/* Estado de prioridad media */
 .media {
-  background-color: #FEF3C7;
-  color: #92400E;
-  font-weight: bold;
+  background-color: #FEF3C7; /* Amarillito/naranja pastel claro */
+  color: #92400E; /* Texto café/naranja oscuro */
+  font-weight: 600; /* Negrita */
 }
 
+/* Estado de prioridad baja */
 .baja {
-  background-color: #D1FAE5;
-  color: #065F46;
-  font-weight: bold;
+  background-color: #D1FAE5; /* Verde menta pastel */
+  color: #065F46; /* Texto verde oscuro */
+  font-weight: 600; /* Negrita */
+}
+
+/* ==========================================
+   10. AJUSTES PARA LA VISTA DE USUARIOS
+   ========================================== */
+
+/* Estructura para ajustar la tabla cuando tbody está separado en ListUsers.tsx */
+table + tbody {
+  display: table; /* Mantiene apariencia de tabla */
+  width: 90%; /* Mismo ancho que el encabezado */
+  max-width: 900px; /* Ancho máximo */
+  margin: 0 auto; /* Centra en la pantalla */
+  background-color: #FFFFFF; /* Fondo blanco */
+  border: 1px solid #CBD5E1; /* Borde gris */
+  border-top: none; /* Quita el borde de arriba */
+  border-radius: 0 0 12px 12px; /* Redondea solo las esquinas inferiores */
+  overflow: hidden; /* Mantiene celdas dentro de bordes */
+  border-collapse: collapse; /* Une las líneas */
+}
+
+/* Mantiene el ancho correcto por fila */
+table + tbody tr {
+  display: table; /* Comportamiento de fila */
+  width: 100%; /* Ocupa todo el espacio */
+  table-layout: fixed; /* Reparte ancho parejo */
+}
+
+/* Columna Nombre en la vista de usuarios */
+table:has(+ tbody) th:nth-child(1),
+table + tbody td:nth-child(1) {
+  width: 50%; /* Ocupa la mitad del espacio */
+  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: #FFEDD5; /* Naranja pastel suave */
+  color: #7C2D12; /* Texto naranja oscuro */
+  border: 1px solid #FED7AA; /* Borde suave pastel */
+}
+
+/* Columna Email en la vista de usuarios */
+table:has(+ tbody) th:nth-child(2),
+table + tbody td:nth-child(2) {
+  width: 50%; /* Ocupa la otra mitad del espacio */
+  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: #FFE5D4; /* Durazno pastel suave */
+  color: #6E2600; /* Texto durazno oscuro */
+  border: 1px solid #FFD8BE; /* Borde suave pastel */
+}
+
+/* Restablecimiento para no alterar la tabla normal de tareas */
+table:not(:has(+ tbody)) td {
+  width: auto; /* Mantiene ancho automático */
 }

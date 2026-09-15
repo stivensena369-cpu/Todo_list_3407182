@@ -17,7 +17,7 @@ const App = () => {
                     gap: "10px",
                     paddingBottom: "30px",
                     paddingTop: "30px",
-                    backgroundColor: "aqua"
+                    backgroundColor: "#C5E1A5"
                   }}> 
                 <NavLink to="/todos">
                     Tareas
