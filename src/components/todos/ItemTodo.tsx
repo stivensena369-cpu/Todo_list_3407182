@@ -1,4 +1,4 @@
-import type { Todo } from '../interfaces/form'
+import type { Todo } from '../../interfaces/todos/form'
 
 interface ItemTodoProps {
 

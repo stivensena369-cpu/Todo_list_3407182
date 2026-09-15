@@ -1,50 +1,46 @@
-import { useState } from 'react'
-import ListTodo from './components/ListTodo'
 
-import type { Priority, Todo } from './interfaces/form'
-
-import FormTodo from './components/FormTodo'
-
-import './index.css';
-//importamos subcomponentes 
+import {Routes,
+        Route,
+        NavLink,
+       } from 
+    'react-router-dom'
+import TodoPage from './pages/todo/TodoPage'
+import UserPage from './components/users/UserPage'
 
 
 
 const App = () => {
-    const [listaTodo, setListaTodo] =
-                    useState<Todo[]>([])
+    
   
-  //crear funcion para añadir 
-  //nueva tarea a listaTodo
-  //pero aislada
-  //Necesita los atributos de la nueva
-  //tarea como parametros
-  const addToDo = ( titulo: string , 
-                    prioridad: Priority ) => {
-      //nueva tarea                
-      const Tarea: Todo = {
-          //UUID: tipo de dato ID unico y Universal
-           id: crypto.randomUUID(),
-           titulo: titulo,
-           prioridad: prioridad,
-           completada: false
-      }
-      //poner la nueva tarea
-      //en la lista
-      setListaTodo((prev)=>[...prev , Tarea])
-  }
-
-
-  return (
-    <>
-    
-      <FormTodo addToDo={addToDo} />
-
-      <ListTodo TodoList={listaTodo} />
-
-    </>
-    
-  )
+    return (<>
+              <nav style={{ display:"flex",
+                    gap: "10px",
+                    paddingBottom: "30px",
+                    paddingTop: "30px",
+                    backgroundColor: "aqua"
+                  }}> 
+                <NavLink to="/todos">
+                    Tareas
+                </NavLink>
+                <NavLink to="/users">
+                  User
+                </NavLink>
+              </nav>
+              <hr/>
+              <main>
+                <Routes>
+                  <Route 
+                    path='/todos'
+                    element={<TodoPage />}
+                  />
+                  <Route 
+                    path='/users'
+                    element={<UserPage/>}
+                  />
+                </Routes>
+              </main>
+    </>)
 }
+
 
 export default App

@@ -1,7 +1,7 @@
 
 import type { ChangeEvent } from 'react'
 import { useState} from 'react'
-import type { Priority, TodoForm } from '../interfaces/form'
+import type { Priority, TodoForm } from '../../interfaces/todos/form'
 
 //interface en la cual defienimos prop funcioon que va a recibir el componente
 
@@ -68,7 +68,7 @@ function FormTodo({ addToDo }:FormTodoProps) {
             />
           </div>
           <div>
-            <label htmlFor=''>Prioridad:</label>
+            <label htmlFor=''>Tipo de Prioridad:</label>
             <select   
               id='prioridad'
               name='prioridad'

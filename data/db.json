@@ -1,0 +1,205 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "titulo": "Tarea 1",
+      "prioridad": "Alta",
+      "completada": false
+    },
+    {
+      "id": "2",
+      "titulo": "Tarea 2",
+      "prioridad": "Media",
+      "completada": true
+    },
+    {
+      "titulo": "sample",
+      "prioridad": "Alta",
+      "completada": true,
+      "id": "o0AEPA5f5YA"
+    },
+    {
+      "titulo": "Ejemplo Tare",
+      "prioridad": "Alta",
+      "completada": true,
+      "id": "c-LnRifFJhA"
+    },
+    {
+      "titulo": "Ejemplo Tarea",
+      "prioridad": "Alta",
+      "completada": true,
+      "id": "PMat_PNfANU"
+    },
+    {
+      "titulo": "Ejemplo Tarea",
+      "prioridad": "Alta",
+      "completada": true,
+      "id": "3tmKUz0HmmA"
+    },
+    {
+      "titulo": "Ejemplo mil",
+      "prioridad": "Alta",
+      "completada": false,
+      "id": "D7YhBYxxIys"
+    },
+    {
+      "titulo": "E 200",
+      "prioridad": "Alta",
+      "completada": false,
+      "id": "jv4GsjNbkec"
+    },
+    {
+      "titulo": "E 200",
+      "prioridad": "Alta",
+      "completada": false,
+      "id": "l4JN10HLotw"
+    },
+    {
+      "titulo": "E 200",
+      "prioridad": "Alta",
+      "completada": false,
+      "id": "_vKBOApEYgc"
+    },
+    {
+      "id": "LXzmVzxmYKs",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "OUoqvtqZ3s4",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "thKTGxpOnEc",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "GX0E6tbG1k4",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "KT_NR28G0dI",
+      "titulo": "fsf",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "QJtzBrAdFxc",
+      "titulo": "dfgdf",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "XZ6-hEIIwNQ",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "0VtAwSqoGAs",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "SlHMq-C8ZX0",
+      "titulo": "fghf",
+      "prioridad": "Alta",
+      "completada": false
+    },
+    {
+      "id": "0j-OE0sgLn0",
+      "titulo": "fgh",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "q0bjIZMPXbM",
+      "titulo": "ssd",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "z1AqiKkZvQM",
+      "titulo": "",
+      "prioridad": "Media",
+      "completada": false
+    },
+    {
+      "id": "Bpa_Z-tgB_c",
+      "titulo": "segg",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "Jd-6U2uwWvw",
+      "titulo": "tarea profe 1 ",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "nnc_6fIEPVo",
+      "titulo": "wefrews",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "ITBEkasccsw",
+      "titulo": "",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "PzR9WnHtfUY",
+      "titulo": "sdad",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "Xj94DueVIQ8",
+      "titulo": "rtg",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "b54qCnSYx7s",
+      "titulo": "ascd",
+      "prioridad": "Baja",
+      "completada": false
+    },
+    {
+      "id": "YWf-rLAbsVE",
+      "titulo": "wesf",
+      "prioridad": "Baja",
+      "completada": false
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "nombre": "Cristian Buitrago",
+      "email": "cbo@sena.edu.co",
+      "rol": "Admin"
+    },
+    {
+      "id": "2",
+      "nombre": "Carlos Zarta",
+      "email": "cz@sena.edu.co",
+      "rol": "Dev"
+    },
+    {
+      "nombre": "Ana Rivera",
+      "email": "ar@gmail.com",
+      "rol": "dev",
+      "id": "rO7N8zUf7QM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
