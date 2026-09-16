@@ -16,8 +16,8 @@
 /* Fondo verde manzana pastel para toda la página */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Fuente moderna */
-  background-color: #DCEDC8; /* Verde manzana pastel suave */
-  color: #1E293B; /* Texto oscuro para lectura clara */
+  background-color: #f7d1eb; /* Verde manzana pastel suave */
+  color: #530f43; /* Texto oscuro para lectura clara */
   padding: 24px; /* Espacio alrededor de la página */
 }
 
@@ -29,7 +29,7 @@ body {
 h1,
 h2 {
   text-align: center; /* Centra el texto del título */
-  color: #2D3748; /* Color oscuro profesional */
+  color: #530f43; /* Color oscuro profesional */
   font-size: 24px; /* Tamaño visible */
   font-weight: 700; /* Texto en negrita */
   margin-bottom: 24px; /* Espacio debajo del título */
@@ -53,20 +53,20 @@ header, nav {
 /* Botones de enlace en el menú (Tareas y Users) */
 header a, nav a {
   display: inline-block; /* Permite dar forma de botón */
-  background-color: #818CF8; /* Azul violeta pastel */
+  background-color: #aa468f; /* Azul violeta pastel */
   color: #FFFFFF; /* Texto blanco */
   padding: 10px 24px; /* Relleno interno */
   border-radius: 8px; /* Esquinas redondeadas estilo píldora */
   text-decoration: none; /* Quita la raya de enlace */
   font-weight: 600; /* Texto semi-negrita */
   font-size: 14px; /* Tamaño mediano */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(128, 8, 8, 0.08); /* Sombra suave */
   transition: all 0.2s ease; /* Animación al pasar el ratón */
 }
 
 /* Efecto al pasar el ratón sobre los botones del menú */
 header a:hover, nav a:hover {
-  background-color: #6366F1; /* Azul más intenso */
+  background-color: #e861a9; /* Azul más intenso */
   transform: translateY(-2px); /* Eleva ligeramente el botón */
 }
 
@@ -79,8 +79,8 @@ form {
   max-width: 480px; /* Ancho máximo */
   margin: 20px auto; /* Centra el formulario */
   padding: 28px; /* Relleno interno */
-  background-color: #FFFFFF; /* Tarjeta blanca para resaltar */
-  border: 1px solid #E2E8F0; /* Borde gris suave */
+  background-color: #f4eaf3; /* Tarjeta blanca para resaltar */
+  border: 1px solid #f4eaf3; /* Borde gris suave */
   border-radius: 12px; /* Esquinas muy suaves */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra de elevación */
 }
@@ -89,7 +89,7 @@ form {
 label {
   display: block; /* Ocupa su propia línea */
   margin-bottom: 6px; /* Espacio antes de la caja */
-  color: #475569; /* Gris oscuro elegante */
+  color: #4d3648; /* Gris oscuro elegante */
   font-size: 14px; /* Tamaño mediano */
   font-weight: 600; /* Texto semi-negrita */
 }
@@ -106,8 +106,8 @@ select {
   margin-bottom: 18px; /* Espacio de separación hacia abajo */
   border: 1px solid #CBD5E1; /* Borde gris claro */
   border-radius: 8px; /* Esquinas suavizadas */
-  background-color: #F8FAFC; /* Fondo gris pastel tenue */
-  color: #0F172A; /* Texto oscuro */
+  background-color: #fcf8fb; /* Fondo gris pastel tenue */
+  color: #530f43; /* Texto oscuro */
   font-size: 14px; /* Tamaño de letra */
   transition: all 0.2s; /* Animación de enfoque */
 }
@@ -116,9 +116,9 @@ select {
 input:focus,
 select:focus {
   outline: none; /* Quita el borde por defecto */
-  border-color: #818CF8; /* Borde azul pastel para resaltar */
+  border-color: #530f43; /* Borde azul pastel para resaltar */
   background-color: #FFFFFF; /* Cambia a blanco puro al escribir */
-  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2); /* Resplandor pastel suave */
+  box-shadow: 0 0 0 3px rgba(241, 178, 206, 0.2); /* Resplandor pastel suave */
 }
 
 /* ==========================================
@@ -129,7 +129,7 @@ select:focus {
 button {
   width: 100%; /* Ocupa todo el ancho */
   padding: 12px; /* Relleno interno */
-  background-color: #818CF8; /* Azul violeta pastel */
+  background-color: #aa468f; /* Azul violeta pastel */
   color: #FFFFFF; /* Texto blanco */
   border: none; /* Sin borde */
   border-radius: 8px; /* Bordes redondeados */
@@ -141,7 +141,7 @@ button {
 
 /* Efecto al pasar el ratón sobre el botón */
 button:hover {
-  background-color: #6366F1; /* Azul más vivo */
+  background-color: #e861a9; /* Azul más vivo */
 }
 
 /* ==========================================
@@ -166,7 +166,7 @@ table {
 th {
   padding: 12px 16px; /* Relleno dentro del encabezado */
   background-color: #E2E8F0; /* Gris pastel bien definido */
-  color: #334155; /* Texto gris oscuro */
+  color: #530f43; /* Texto gris oscuro */
   font-size: 13px; /* Tamaño de letra */
   text-transform: uppercase; /* Texto en mayúsculas */
   letter-spacing: 0.05em; /* Espaciado entre letras */
@@ -178,7 +178,7 @@ th {
 td {
   padding: 12px 16px; /* Relleno interno */
   font-size: 14px; /* Tamaño del texto */
-  color: #1E293B; /* Texto oscuro visible */
+  color: #401536; /* Texto oscuro visible */
   border-bottom: 1px solid #E2E8F0; /* Línea gris suave entre filas */
   text-align: center; /* Centra el contenido */
 }
@@ -199,21 +199,21 @@ tr:nth-child(even) td {
 
 /* Estado de prioridad alta */
 .alta {
-  background-color: #FEE2E2; /* Rojo pastel claro */
-  color: #991B1B; /* Texto rojo oscuro */
+  background-color: #f9b1b1d1; /* Rojo pastel claro */
+  color: #6d2929; /* Texto rojo oscuro */
   font-weight: 600; /* Negrita */
 }
 
 /* Estado de prioridad media */
 .media {
-  background-color: #FEF3C7; /* Amarillito/naranja pastel claro */
-  color: #92400E; /* Texto café/naranja oscuro */
+  background-color: #fdf0bd; /* Amarillito/naranja pastel claro */
+  color: #99540a; /* Texto café/naranja oscuro */
   font-weight: 600; /* Negrita */
 }
 
 /* Estado de prioridad baja */
 .baja {
-  background-color: #D1FAE5; /* Verde menta pastel */
+  background-color: #cff6e2; /* Verde menta pastel */
   color: #065F46; /* Texto verde oscuro */
   font-weight: 600; /* Negrita */
 }
@@ -228,8 +228,8 @@ table + tbody {
   width: 90%; /* Mismo ancho que el encabezado */
   max-width: 900px; /* Ancho máximo */
   margin: 0 auto; /* Centra en la pantalla */
-  background-color: #FFFFFF; /* Fondo blanco */
-  border: 1px solid #CBD5E1; /* Borde gris */
+  background-color: #eeb8e5; /* Fondo blanco */
+  border: 1px solid #eeb8e5; /* Borde gris */
   border-top: none; /* Quita el borde de arriba */
   border-radius: 0 0 12px 12px; /* Redondea solo las esquinas inferiores */
   overflow: hidden; /* Mantiene celdas dentro de bordes */
@@ -243,24 +243,32 @@ table + tbody tr {
   table-layout: fixed; /* Reparte ancho parejo */
 }
 
-/* Columna Nombre en la vista de usuarios */
+/* Columna Nombre en la vista de usuarios (Alineación y bordes) */
 table:has(+ tbody) th:nth-child(1),
 table + tbody td:nth-child(1) {
   width: 50%; /* Ocupa la mitad del espacio */
   text-align: left; /* Alinea el texto a la izquierda */
-  background-color: #FFEDD5; /* Naranja pastel suave */
-  color: #7C2D12; /* Texto naranja oscuro */
-  border: 1px solid #FED7AA; /* Borde suave pastel */
+  color: #530f43; /* Texto oscuro */
+  border: 1px solid #e8ecf1; /* Borde suave */
 }
 
-/* Columna Email en la vista de usuarios */
+/* Columna Email en la vista de usuarios (Alineación y bordes) */
 table:has(+ tbody) th:nth-child(2),
 table + tbody td:nth-child(2) {
   width: 50%; /* Ocupa la otra mitad del espacio */
   text-align: left; /* Alinea el texto a la izquierda */
-  background-color: #FFE5D4; /* Durazno pastel suave */
-  color: #6E2600; /* Texto durazno oscuro */
-  border: 1px solid #FFD8BE; /* Borde suave pastel */
+  color: #530f43; /* Texto oscuro */
+  border: 1px solid #e8ecf1; /* Borde suave */
+}
+
+/* Filas impares de usuarios: Blanco */
+table + tbody tr:nth-child(odd) td {
+  background-color: #FFFFFF;
+}
+
+/* Filas pares de usuarios: Gris/Azul pastel alternado (igual a Tareas) */
+table + tbody tr:nth-child(even) td {
+  background-color: #E2E8F0;
 }
 
 /* Restablecimiento para no alterar la tabla normal de tareas */
